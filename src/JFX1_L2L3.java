@@ -6,7 +6,7 @@ import javafx.scene.control.Button;
 import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
 
-public class JFX1 extends Application{
+public class JFX1_L2L3 extends Application{
     Button button;
 
     public static void main(String[] args) {
