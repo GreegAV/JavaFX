@@ -6,7 +6,6 @@ import javafx.scene.layout.*;
 import javafx.stage.*;
 import javafx.geometry.*;
 
-import java.awt.*;
 
 public class JFX_L5_AlertWindow {
     public static void display(String title, String message) {
