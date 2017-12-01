@@ -26,7 +26,7 @@ public class JFX_L8 extends Application {
         Button button1 = new Button("File");
         Button button2 = new Button("View");
         Button button3 = new Button("Edit");
-        topMenu.getChildren().addAll(button1,button2,button3);
+        topMenu.getChildren().addAll(button1, button2, button3);
         topMenu.setAlignment(Pos.CENTER);
 
         VBox leftMenu = new VBox(5);
