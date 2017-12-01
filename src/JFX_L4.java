@@ -9,7 +9,7 @@ import javafx.scene.layout.StackPane;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
-public class JFX1_L4 extends Application{
+public class JFX_L4 extends Application{
     Stage window;
     Scene scene1, scene2;
 

@@ -6,8 +6,9 @@ import javafx.scene.control.Button;
 import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
 
-public class JFX1_L2L3 extends Application{
+public class JFX_L6 extends Application {
     Button button;
+    Stage window;
 
     public static void main(String[] args) {
         launch(args);
@@ -16,16 +17,20 @@ public class JFX1_L2L3 extends Application{
 
     @Override
     public void start(Stage primaryStage) throws Exception {
-        primaryStage.setTitle("Test!");
-        button=new Button("Button1");
-        button.setOnAction(event -> {
-            System.out.println("!");
+        window = primaryStage;
+        button = new Button("Button1");
+        window.setTitle("!!!");
+
+        button.setPrefSize(200, 100);
+        button.setOnAction(e -> {
+            boolean result = JFX_L6_ConfirmWindow.display("Test", "??????");
+            System.out.println(result);
         });
         StackPane layout = new StackPane();
         layout.getChildren().add(button);
-        Scene scene = new Scene(layout,300,300);
-        primaryStage.setScene(scene);
-        primaryStage.show();
+        Scene scene = new Scene(layout, 400, 300);
+        window.setScene(scene);
+        window.show();
 
     }
 
