@@ -4,7 +4,7 @@ import javafx.scene.control.Button;
 import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
 
-public class JFX_L1 extends Application{
+public class JFX_L1 extends Application {
     Button button;
 
     @Override
@@ -13,7 +13,7 @@ public class JFX_L1 extends Application{
         button = new Button("Test!");
         StackPane layout = new StackPane();
         layout.getChildren().add(button);
-        Scene scene = new Scene(layout,300,300);
+        Scene scene = new Scene(layout, 300, 300);
         primaryStage.setScene(scene);
         primaryStage.show();
     }

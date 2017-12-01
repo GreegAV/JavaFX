@@ -25,7 +25,7 @@ public class JFX_L5_AlertWindow {
         layout.getChildren().addAll(label, closeButton);
         layout.setAlignment(Pos.CENTER);
 
-        Scene scene = new Scene(layout,300,300);
+        Scene scene = new Scene(layout, 300, 300);
         window.setScene(scene);
         window.show();
 

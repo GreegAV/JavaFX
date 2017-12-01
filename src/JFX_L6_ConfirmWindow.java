@@ -35,7 +35,7 @@ public class JFX_L6_ConfirmWindow {
 
         VBox layout = new VBox(15);
         HBox layout1 = new HBox(15);
-        layout1.getChildren().addAll(yesButton,noButton);
+        layout1.getChildren().addAll(yesButton, noButton);
         layout1.setAlignment(Pos.CENTER);
         layout.getChildren().addAll(label, layout1);
 //        layout.getChildren().addAll(label, closeButton);
