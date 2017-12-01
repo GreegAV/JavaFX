@@ -18,7 +18,10 @@ public class JFX_L7 extends Application {
         window = primaryStage;
         button = new Button("Button1");
         window.setTitle("!!!");
-        window.setOnCloseRequest(e -> closeProgram());
+        window.setOnCloseRequest(e -> {
+            e.consume();
+            closeprogram2();
+        });
 
         button.setPrefSize(200, 100);
         button.setOnAction(e -> closeProgram());
@@ -33,6 +36,12 @@ public class JFX_L7 extends Application {
     private void closeProgram() {
         System.out.println("!!!");
         window.close();
+
     }
 
+    private void closeprogram2() {
+        Boolean answer = JFX_L6_ConfirmWindow.display("Text1", "!!!!!!!!!!!!!!!!!!!");
+        System.out.println("!!!!!!!");
+        if (answer) window.close();
+    }
 }
