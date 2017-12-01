@@ -18,18 +18,21 @@ public class JFX_L7 extends Application {
         window = primaryStage;
         button = new Button("Button1");
         window.setTitle("!!!");
+        window.setOnCloseRequest(e -> closeProgram());
 
         button.setPrefSize(200, 100);
-//        button.setOnAction(e -> {
-//            boolean result = JFX_L6_ConfirmWindow.display("Test", "??????");
-//            System.out.println(result);
-//        });
+        button.setOnAction(e -> closeProgram());
         StackPane layout = new StackPane();
         layout.getChildren().add(button);
         Scene scene = new Scene(layout, 400, 300);
         window.setScene(scene);
         window.show();
 
+    }
+
+    private void closeProgram() {
+        System.out.println("!!!");
+        window.close();
     }
 
 }
