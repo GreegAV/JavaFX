@@ -50,6 +50,7 @@ public class JFX_L8 extends Application {
 
         VBox centerMenu = new VBox(5);
         Button button = new Button("Exit");
+        button.setOnAction(e-> System.exit(0));
         centerMenu.getChildren().addAll(button);
         centerMenu.setAlignment(Pos.CENTER);
         centerMenu.setStyle("-fx-background-color: #c0c0c0");
